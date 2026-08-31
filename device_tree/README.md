@@ -2,7 +2,7 @@
 
 Android/OrangeFox device tree for the **Ulefone Armor 29 Pro Thermal** (`GQ5012BF1`), based on the MediaTek MT6878 platform.
 
-This repository contains the device-specific configuration required to build recovery for the device. Detailed hardware research, partition discoveries, bring-up history, security/FBE analysis, and unresolved research notes are kept in [`Findings.md`](Findings.md).
+This repository contains the device-specific configuration required to build recovery for the device.
 
 
 ## Production status — Build34
@@ -286,7 +286,7 @@ Known-good FBE/security integration was verified after commit:
 bbe7af2
 ```
 
-Detailed root-cause analysis and bring-up history are in [`Findings.md`](Findings.md).
+The production configuration and verified behavior are summarized in this README.
 
 ## Important build notes
 
@@ -434,7 +434,7 @@ Known SHA-256:
 6629ec6148ac361a5f0085b8b19efa9d591426679f58262c4998345f41931162
 ```
 
-A secondary Hynitron controller is also present in stock Android. Its exact hardware role is documented in [`Findings.md`](Findings.md).
+A secondary Hynitron controller is also present in stock Android; its exact hardware role remains unknown.
 
 ## USB
 
@@ -467,7 +467,7 @@ keystore2
 
 The final recovery FBE implementation is intentionally device-specific because recovery must reproduce the relevant TrustKernel, VINTF, SELinux, device-node, persistent-storage, and service-order requirements.
 
-See [`Findings.md`](Findings.md) for the full investigation.
+The required TrustKernel integration is summarized above.
 
 ## Battery
 
@@ -503,7 +503,7 @@ voltage:  8372000 uV (dual-cell pack)
 ```
 
 Full node map, unit notes and the SELinux change are in the Build32 production
-status section above. Detailed research notes are in [`Findings.md`](Findings.md).
+status section above.
 
 ## Repository layout
 
@@ -526,7 +526,7 @@ Kernel source, if a maintainable matching source tree becomes available, should 
 android_kernel_ulefone_gq5012bf1
 ```
 
-Large research notes and hardware reverse-engineering results belong in [`Findings.md`](Findings.md), keeping this README focused on building and using the device tree.
+Keep this README focused on building and using the device tree.
 
 ## Research policy
 
