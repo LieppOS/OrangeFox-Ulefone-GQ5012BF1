@@ -1,0 +1,3 @@
+manifest origin: https://github.com/nebrassy/platform_manifest_twrp_aosp.git
+manifest revision: 49f2d6950edd2dc87c213636a8a680ca5c97e52c
+repo version: repo version v2.66.1
